@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQS", "SQS", "{E3F8E857-110
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsPublisherClient", "SQS\SqsPublisherClient\SqsPublisherClient.csproj", "{3FCCCD88-4E8C-434D-B6D7-82CBEF2E3BC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsConsumerClient", "SQS\SqsConsumerClient\SqsConsumerClient.csproj", "{104EF600-B701-4682-9EDF-A93A4D0E3464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Api", "Customers.Api\Customers.Api.csproj", "{4DA19BBF-23DA-42A9-A9F5-1E1B0277A109}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,20 @@ Global
 		{3FCCCD88-4E8C-434D-B6D7-82CBEF2E3BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FCCCD88-4E8C-434D-B6D7-82CBEF2E3BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FCCCD88-4E8C-434D-B6D7-82CBEF2E3BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104EF600-B701-4682-9EDF-A93A4D0E3464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104EF600-B701-4682-9EDF-A93A4D0E3464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104EF600-B701-4682-9EDF-A93A4D0E3464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104EF600-B701-4682-9EDF-A93A4D0E3464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA19BBF-23DA-42A9-A9F5-1E1B0277A109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA19BBF-23DA-42A9-A9F5-1E1B0277A109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA19BBF-23DA-42A9-A9F5-1E1B0277A109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA19BBF-23DA-42A9-A9F5-1E1B0277A109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3FCCCD88-4E8C-434D-B6D7-82CBEF2E3BC5} = {E3F8E857-110E-4440-88CD-4A4B215B78CC}
+		{104EF600-B701-4682-9EDF-A93A4D0E3464} = {E3F8E857-110E-4440-88CD-4A4B215B78CC}
 	EndGlobalSection
 EndGlobal
