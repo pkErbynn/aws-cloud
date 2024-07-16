@@ -58,7 +58,7 @@ namespace Customers.Consumer
                     // }
 
                     ///// Better way is to use Handlers and process data based on event Type, leveraging MediatR
-                    var type = Type.GetType($"Customers.Consumer.Messsages.{messageType}");
+                    var type = Type.GetType($"Customers.Consumer.Messages.{messageType}");
                     if (type == null)
                     {
                         _logger.LogWarning($"Unknown message class type: {messageType}");
