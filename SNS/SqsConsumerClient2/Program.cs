@@ -4,7 +4,7 @@ using Amazon.SQS.Model;
 var sqsClient = new AmazonSQSClient();
 var cts = new CancellationTokenSource();
 
-var queueUrl = await sqsClient.GetQueueUrlAsync("customers");
+var queueUrl = await sqsClient.GetQueueUrlAsync("customers2");  // second queue name
 
 var receiveMessageRequest = new ReceiveMessageRequest
 {

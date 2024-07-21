@@ -1,4 +1,4 @@
-namespace SqsConsumerClient
+namespace SqsConsumerClient2
 {
     public class CustomerCreated
     {
