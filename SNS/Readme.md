@@ -15,3 +15,7 @@ Running CLI consumers
 - Running new and old consumers and
 - Running publisher, consumers recieve messages in their terminals
 
+Running real services
+- Integrate Sns library in to the "Customers.Api" 
+- Then consumed by the "Customers.Consumer" service
+
