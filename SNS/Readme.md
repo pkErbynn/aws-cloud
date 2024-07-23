@@ -17,5 +17,9 @@ Running CLI consumers
 
 Running real services
 - Integrate Sns library in to the "Customers.Api" 
+    - Consumer.Api Architecture 
+    - Controller > Services > Repository(if connected to db) > DB
+    - Controller > Services > HttpClient
+    - Controller > Services > SQS Messenger
 - Then consumed by the "Customers.Consumer" service
 
