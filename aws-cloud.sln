@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsConsumerClient2", "SNS\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sns.Customers.Consumer", "SNS\Sns.Customers.Consumer\Sns.Customers.Consumer.csproj", "{40558C7A-7B28-43E5-AADE-E2E2B544E5A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamo", "Dynamo", "{DFE20303-B8C2-4979-A579-077198D247FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamo.Customers.Api", "DynamoDB\Dynamo.Customers.Api\Dynamo.Customers.Api.csproj", "{AB516BE5-18E5-42CE-9439-311941FFB9C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{40558C7A-7B28-43E5-AADE-E2E2B544E5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40558C7A-7B28-43E5-AADE-E2E2B544E5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40558C7A-7B28-43E5-AADE-E2E2B544E5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB516BE5-18E5-42CE-9439-311941FFB9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB516BE5-18E5-42CE-9439-311941FFB9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB516BE5-18E5-42CE-9439-311941FFB9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB516BE5-18E5-42CE-9439-311941FFB9C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +82,6 @@ Global
 		{EC93C163-7DDD-4D80-8D11-7B0887F2C56A} = {07E2A953-865D-45DD-86F4-B67311C6512D}
 		{FBA0F777-FFB0-480E-8FD5-8FB50242C7AC} = {07E2A953-865D-45DD-86F4-B67311C6512D}
 		{40558C7A-7B28-43E5-AADE-E2E2B544E5A3} = {07E2A953-865D-45DD-86F4-B67311C6512D}
+		{AB516BE5-18E5-42CE-9439-311941FFB9C4} = {DFE20303-B8C2-4979-A579-077198D247FD}
 	EndGlobalSection
 EndGlobal

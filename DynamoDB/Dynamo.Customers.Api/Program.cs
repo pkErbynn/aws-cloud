@@ -1,6 +1,7 @@
-using Customers.Api.Repositories;
-using Customers.Api.Services;
-using Customers.Api.Validation;
+using Amazon.DynamoDBv2;
+using Dynamo.Customers.Api.Repositories;
+using Dynamo.Customers.Api.Services;
+using Dynamo.Customers.Api.Validation;
 using FluentValidation.AspNetCore;
 using Microsoft.Net.Http.Headers;
 
@@ -24,6 +25,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
 builder.Services.AddSingleton<ICustomerService, CustomerService>();
 builder.Services.AddSingleton<IGitHubService, GitHubService>();
+
+// Register DynamoDB
+builder.Services.AddSingleton<IAmazonDynamoDB, AmazonDynamoDBClient>();
 
 builder.Services.AddHttpClient("GitHub", httpClient =>
 {

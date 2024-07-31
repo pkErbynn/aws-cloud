@@ -1,4 +1,5 @@
-﻿namespace Dynamo.Customers.Api.Contracts.Requests;
+﻿
+namespace Dynamo.Customers.Api.Contracts.Requests;
 
 public class CustomerRequest
 {

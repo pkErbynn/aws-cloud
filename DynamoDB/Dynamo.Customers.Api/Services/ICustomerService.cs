@@ -1,4 +1,4 @@
-﻿using Customers.Api.Domain;
+﻿using Dynamo.Customers.Api.Domain;
 
 namespace Dynamo.Customers.Api.Services;
 
@@ -10,7 +10,7 @@ public interface ICustomerService
 
     Task<IEnumerable<Customer>> GetAllAsync();
 
-    Task<bool> UpdateAsync(Customer customer);
+    Task<bool> UpdateAsync(Customer customer, DateTime requestStarted);
 
     Task<bool> DeleteAsync(Guid id);
 }

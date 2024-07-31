@@ -1,4 +1,4 @@
-﻿using Customers.Api.Contracts.Data;
+﻿using Dynamo.Customers.Api.Contracts.Data;
 
 namespace Dynamo.Customers.Api.Repositories;
 
@@ -10,7 +10,7 @@ public interface ICustomerRepository
 
     Task<IEnumerable<CustomerDto>> GetAllAsync();
 
-    Task<bool> UpdateAsync(CustomerDto customer);
+    Task<bool> UpdateAsync(CustomerDto customer, DateTime requestStarted);
 
     Task<bool> DeleteAsync(Guid id);
 }

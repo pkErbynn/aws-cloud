@@ -1,5 +1,5 @@
 ﻿using System.Text.RegularExpressions;
-using Customers.Api.Contracts.Requests;
+using Dynamo.Customers.Api.Contracts.Requests;
 using FluentValidation;
 
 namespace Dynamo.Customers.Api.Validation;

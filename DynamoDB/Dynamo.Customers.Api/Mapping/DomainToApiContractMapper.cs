@@ -1,5 +1,5 @@
-﻿using Customers.Api.Contracts.Responses;
-using Customers.Api.Domain;
+﻿using Dynamo.Customers.Api.Contracts.Responses;
+using Dynamo.Customers.Api.Domain;
 
 namespace Dynamo.Customers.Api.Mapping;
 

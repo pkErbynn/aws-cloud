@@ -1,6 +1,6 @@
-﻿using Customers.Api.Domain;
-using Customers.Api.Mapping;
-using Customers.Api.Repositories;
+﻿using Dynamo.Customers.Api.Mapping;
+using Dynamo.Customers.Api.Domain;
+using Dynamo.Customers.Api.Repositories;
 using FluentValidation;
 using FluentValidation.Results;
 
@@ -50,7 +50,7 @@ public class CustomerService : ICustomerService
         return customerDtos.Select(x => x.ToCustomer());
     }
 
-    public async Task<bool> UpdateAsync(Customer customer)
+    public async Task<bool> UpdateAsync(Customer customer, DateTime requestStarted)
     {
         var customerDto = customer.ToCustomerDto();
         
@@ -61,7 +61,7 @@ public class CustomerService : ICustomerService
             throw new ValidationException(message, GenerateValidationError(nameof(customer.GitHubUsername), message));
         }
         
-        return await _customerRepository.UpdateAsync(customerDto);
+        return await _customerRepository.UpdateAsync(customerDto, requestStarted);
     }
 
     public async Task<bool> DeleteAsync(Guid id)

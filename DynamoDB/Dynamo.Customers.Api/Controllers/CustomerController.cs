@@ -1,6 +1,6 @@
-using Customers.Api.Contracts.Requests;
-using Customers.Api.Mapping;
-using Customers.Api.Services;
+using Dynamo.Customers.Api.Contracts.Requests;
+using Dynamo.Customers.Api.Mapping;
+using Dynamo.Customers.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dynamo.Customers.Api.Controllers;
@@ -53,6 +53,7 @@ public class CustomerController : ControllerBase
     public async Task<IActionResult> Update(
         [FromMultiSource] UpdateCustomerRequest request)
     {
+        var requestStarted = DateTime.UtcNow;
         var existingCustomer = await _customerService.GetAsync(request.Id);
 
         if (existingCustomer is null)
@@ -61,7 +62,7 @@ public class CustomerController : ControllerBase
         }
 
         var customer = request.ToCustomer();
-        await _customerService.UpdateAsync(customer);
+        await _customerService.UpdateAsync(customer, requestStarted);
 
         var customerResponse = customer.ToCustomerResponse();
         return Ok(customerResponse);

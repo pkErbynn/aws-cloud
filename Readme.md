@@ -6,4 +6,8 @@ Web service development with integration and interaction with cutting-edge AWS C
 - S3, 
 - Secrete Manager, 
 - DynamoDB, 
-- Lambda 
+- Lambda
+
+### Project Architecture
+[Read more...](https://www.notion.so/Cloud-Fundamentals-AWS-Services-for-C-Developers-ae73c952d37549b48ed33fbdb7acde60?pvs=4)
+
