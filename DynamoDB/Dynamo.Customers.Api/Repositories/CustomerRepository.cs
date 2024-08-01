@@ -26,6 +26,8 @@ public class CustomerRepository : ICustomerRepository
     {
         customer.UpdateAt = DateTime.UtcNow;
         var customerAsJson = JsonSerializer.Serialize(customer);
+
+        /// An attribute map defines the attributes(name, email, etc) and their values(john, j@erbynn) for an item in order to be stored within a DynamoDB table. A prepared data ready to be pushed/written to db
         var customerAsAttribute = Document.FromJson(customerAsJson).ToAttributeMap();
         
         var createItemRequest = new PutItemRequest
