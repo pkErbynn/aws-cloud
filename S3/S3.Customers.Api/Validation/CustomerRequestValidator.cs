@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
-using Customers.Api.Contracts.Requests;
 using FluentValidation;
+using S3.Customers.Api.Contracts.Requests;
 
 namespace S3.Customers.Api.Validation;
 

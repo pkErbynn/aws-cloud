@@ -1,9 +1,9 @@
 using Amazon.DynamoDBv2;
-using Customers.Api.Repositories;
-using Customers.Api.Services;
-using Customers.Api.Validation;
 using FluentValidation.AspNetCore;
 using Microsoft.Net.Http.Headers;
+using S3.Customers.Api.Repositories;
+using S3.Customers.Api.Services;
+using S3.Customers.Api.Validation;
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {

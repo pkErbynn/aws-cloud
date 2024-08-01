@@ -3,7 +3,7 @@ using System.Text.Json;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
-using Customers.Api.Contracts.Data;
+using S3.Customers.Api.Contracts.Data;
 
 namespace S3.Customers.Api.Repositories;
 

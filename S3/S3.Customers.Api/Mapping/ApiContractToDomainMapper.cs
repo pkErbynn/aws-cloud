@@ -1,5 +1,5 @@
-﻿using Customers.Api.Contracts.Requests;
-using Customers.Api.Domain;
+﻿using S3.Customers.Api.Contracts.Requests;
+using S3.Customers.Api.Domain;
 
 namespace S3.Customers.Api.Mapping;
 

@@ -1,4 +1,5 @@
-﻿using Customers.Api.Contracts.Data;
+﻿
+using S3.Customers.Api.Contracts.Data;
 
 namespace S3.Customers.Api.Repositories;
 

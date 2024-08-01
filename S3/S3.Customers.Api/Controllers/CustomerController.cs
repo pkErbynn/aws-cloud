@@ -1,7 +1,7 @@
-using Customers.Api.Contracts.Requests;
-using Customers.Api.Mapping;
-using Customers.Api.Services;
 using Microsoft.AspNetCore.Mvc;
+using S3.Customers.Api.Contracts.Requests;
+using S3.Customers.Api.Mapping;
+using S3.Customers.Api.Services;
 
 namespace S3.Customers.Api.Controllers;
 

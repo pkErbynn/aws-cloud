@@ -1,8 +1,8 @@
-﻿using Customers.Api.Domain;
-using Customers.Api.Mapping;
-using Customers.Api.Repositories;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
+using S3.Customers.Api.Domain;
+using S3.Customers.Api.Mapping;
+using S3.Customers.Api.Repositories;
 
 namespace S3.Customers.Api.Services;
 
