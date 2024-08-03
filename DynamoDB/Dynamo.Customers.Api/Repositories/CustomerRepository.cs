@@ -15,7 +15,7 @@ namespace Dynamo.Customers.Api.Repositories;
 public class CustomerRepository : ICustomerRepository
 {
     private readonly IAmazonDynamoDB _dynamoDb;
-    private readonly string _tableName = "customers";
+    private readonly string _tableName = "customers";   // should come from config
 
     public CustomerRepository(IAmazonDynamoDB dynamoDb)
     {

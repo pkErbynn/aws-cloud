@@ -1,4 +1,5 @@
 using Amazon.DynamoDBv2;
+using Amazon.S3;
 using FluentValidation.AspNetCore;
 using Microsoft.Net.Http.Headers;
 using S3.Customers.Api.Repositories;
@@ -21,6 +22,9 @@ builder.Services.AddControllers().AddFluentValidation(x =>
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<IAmazonS3, AmazonS3Client>();
+builder.Services.AddSingleton<ICustomerImageService, CustomerImageService>();
 
 builder.Services.AddSingleton<IAmazonDynamoDB, AmazonDynamoDBClient>();
 builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
