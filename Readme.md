@@ -8,7 +8,7 @@ Web service development with integration and interaction with cutting-edge AWS C
 5. DynamoDB, 
 6. Lambda
 
-### Project Architecture
+### AWS SQS and SNS Architecture
 SQS
 ![Sqs diagram](./assets/sqs.png)
 
