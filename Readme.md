@@ -12,10 +12,15 @@ Web service development with integration and interaction with cutting-edge AWS C
 **SQS**
 
 ![Sqs diagram](./assets/sqs.png)
+- Queue Types: Standard and FIFO
+- Publisher/Consumer (1-to-1)
+- Dead Letter Queues (DLQ)
 
 **SNS**
 
 ![Sns diagram](./assets/sns.png)
+- Publisher/Consumer (1-to-many)
+- Message filtering
 
 [Read more...](https://www.notion.so/Cloud-Fundamentals-AWS-Services-for-C-Developers-ae73c952d37549b48ed33fbdb7acde60?pvs=4)
 
