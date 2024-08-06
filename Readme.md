@@ -9,10 +9,12 @@ Web service development with integration and interaction with cutting-edge AWS C
 6. Lambda
 
 ### AWS SQS and SNS Architecture
-SQS
+**SQS**
+
 ![Sqs diagram](./assets/sqs.png)
 
-SNS
+**SNS**
+
 ![Sns diagram](./assets/sns.png)
 
 [Read more...](https://www.notion.so/Cloud-Fundamentals-AWS-Services-for-C-Developers-ae73c952d37549b48ed33fbdb7acde60?pvs=4)
