@@ -19,7 +19,7 @@ public class WeatherService : IWeatherService
     public async Task<WeatherResponse?> GetCurrentWeatherAsync(string city)
     {
         var url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={_weatherApiOptions.CurrentValue.ApiKey}&units=metric";
-        Console.WriteLine("URLLL: " + url);
+        // Console.WriteLine("URLLL: " + url);
         
         var httpClient = _httpClientFactory.CreateClient();
         
